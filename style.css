@@ -1,0 +1,155 @@
+:root {
+  color-scheme: light;
+  font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f5f6f8;
+  color: #1f2937;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+.subtle {
+  color: #6b7280;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+}
+
+.grid.two {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.grid.three {
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+}
+
+.grid.five {
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+}
+
+.links .card {
+  display: block;
+  text-align: center;
+  font-weight: 700;
+}
+
+.card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 14px;
+  border: 1px solid #e5e7eb;
+  text-decoration: none;
+  color: inherit;
+}
+
+.block {
+  margin-top: 16px;
+}
+
+.stats {
+  margin-top: 16px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat strong {
+  font-size: 1.3rem;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.gap {
+  gap: 10px;
+}
+
+.stack {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-flex;
+  gap: 6px;
+  align-items: center;
+  margin-right: 10px;
+}
+
+select, input[type="number"], input[type="text"], button {
+  font: inherit;
+}
+
+button {
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+button.ghost {
+  background: #4b5563;
+}
+
+button.danger {
+  background: #dc2626;
+}
+
+.back {
+  text-decoration: none;
+  color: #374151;
+}
+
+.question {
+  padding: 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.meta {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border-bottom: 1px solid #e5e7eb;
+  padding: 8px;
+  text-align: left;
+}

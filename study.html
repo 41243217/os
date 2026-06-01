@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>閱讀記憶</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <a class="back" href="index.html">← 返回主頁</a>
+      <h1>閱讀記憶</h1>
+
+      <section class="card block">
+        <div class="row wrap gap">
+          <label>章節
+            <select id="chapter-filter">
+              <option value="all">全部</option>
+              <option value="CH5">CH5</option>
+              <option value="CH6">CH6</option>
+              <option value="CH8">CH8</option>
+              <option value="CH9">CH9</option>
+            </select>
+          </label>
+
+          <label>題型
+            <select id="type-filter">
+              <option value="all">全部</option>
+              <option value="single">單選題</option>
+              <option value="multiple">多選題</option>
+              <option value="text">填充題</option>
+            </select>
+          </label>
+
+          <label><input id="chinese-only" type="checkbox" /> 只閱讀中文題目</label>
+        </div>
+
+        <div class="grid five" id="stats">
+          <div class="stat"><strong id="total-count">0</strong><span>總題數</span></div>
+          <div class="stat"><strong id="special-count">0</strong><span>需特別記憶</span></div>
+          <div class="stat"><strong id="single-count">0</strong><span>單選題</span></div>
+          <div class="stat"><strong id="multiple-count">0</strong><span>多選題</span></div>
+          <div class="stat"><strong id="text-count">0</strong><span>填充題</span></div>
+        </div>
+      </section>
+
+      <section id="study-list" class="stack"></section>
+    </main>
+
+    <script src="common.js"></script>
+    <script src="study.js"></script>
+  </body>
+</html>

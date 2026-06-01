@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>開始測驗</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <a class="back" href="index.html">← 返回主頁</a>
+      <h1>開始測驗</h1>
+
+      <section class="card block">
+        <div class="form-row">
+          <label for="chapter">章節</label>
+          <select id="chapter">
+            <option value="CH5">CH5</option>
+            <option value="CH6">CH6</option>
+            <option value="CH8">CH8</option>
+            <option value="CH9">CH9</option>
+          </select>
+        </div>
+
+        <fieldset>
+          <legend>題型</legend>
+          <label><input type="checkbox" name="type" value="single" checked /> 單選題</label>
+          <label><input type="checkbox" name="type" value="multiple" checked /> 多選題</label>
+          <label><input type="checkbox" name="type" value="text" checked /> 填充題</label>
+        </fieldset>
+
+        <div class="form-row">
+          <label for="question-count">題數</label>
+          <input id="question-count" type="number" value="5" min="1" max="100" />
+        </div>
+
+        <label><input id="chinese-only" type="checkbox" /> 只測驗中文題目</label>
+
+        <div class="row gap">
+          <button id="start-btn" type="button">開始測驗</button>
+          <button id="retry-btn" type="button" class="ghost" hidden>再測一次</button>
+        </div>
+      </section>
+
+      <section id="quiz-area" class="card block" hidden>
+        <h2>題目</h2>
+        <form id="quiz-form"></form>
+        <div class="row gap">
+          <button id="submit-btn" type="button">檢查結果</button>
+        </div>
+      </section>
+
+      <section id="result" class="card block" hidden></section>
+    </main>
+
+    <script src="common.js"></script>
+    <script src="quiz.js"></script>
+  </body>
+</html>
