@@ -6,7 +6,7 @@ const studyList = document.getElementById("study-list");
 let allQuestions = [];
 
 function answerKey(question) {
-  return normalizeAnswer(question.answer).slice().sort().join("|");
+  return normalizeAnswer(question.answer).sort().join("|");
 }
 
 function isSpecial(question, index, rows) {
@@ -33,7 +33,10 @@ function render() {
     return map;
   }, {});
 
-  const sorted = filtered.slice().sort((a, b) => (answerCounts[answerKey(b)] || 0) - (answerCounts[answerKey(a)] || 0));
+  const keyed = filtered.map((question) => ({ question, key: answerKey(question) }));
+  const sorted = keyed
+    .sort((a, b) => (answerCounts[b.key] || 0) - (answerCounts[a.key] || 0))
+    .map((item) => item.question);
 
   let specialCount = 0;
   sorted.forEach((question, idx) => {
