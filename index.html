@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>刷題系統</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <h1>刷題系統</h1>
+        <button id="clearData" class="danger">清除所有學習資料</button>
+      </div>
+
+      <section class="grid nav" aria-label="功能導覽">
+        <a class="card-link" href="./quiz.html"><article class="card"><h2>開始測驗</h2><p class="muted">選章節、題型與題數立即練習。</p></article></a>
+        <a class="card-link" href="./review.html"><article class="card"><h2>錯題回顧</h2><p class="muted">查看與管理歷次錯題記錄。</p></article></a>
+        <a class="card-link" href="./study.html"><article class="card"><h2>閱讀記憶</h2><p class="muted">高亮需要特別記憶的答案。</p></article></a>
+        <a class="card-link" href="./page.html"><article class="card"><h2>最新題庫總覽</h2><p class="muted">各章節題型統計總覽。</p></article></a>
+      </section>
+
+      <section class="panel" style="margin-top:16px">
+        <h2>學習統計</h2>
+        <div class="grid stats" style="margin-top:10px">
+          <article class="card"><p class="small muted">測驗次數</p><h3 id="attempts">0</h3></article>
+          <article class="card"><p class="small muted">累計錯題</p><h3 id="wrongTotal">0</h3></article>
+          <article class="card"><p class="small muted">平均分數</p><h3 id="avgScore">0%</h3></article>
+        </div>
+      </section>
+    </main>
+
+    <script src="./common.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>錯題回顧</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <h1>錯題回顧</h1>
+        <a class="btn secondary" href="./index.html">回首頁</a>
+      </div>
+
+      <section class="panel">
+        <div class="controls">
+          <div>
+            <label for="chapterFilter">章節</label>
+            <select id="chapterFilter">
+              <option value="all">全部章節</option>
+            </select>
+          </div>
+          <div>
+            <label for="typeFilter">題型</label>
+            <select id="typeFilter">
+              <option value="all">全部題型</option>
+              <option value="single">single</option>
+              <option value="multiple">multiple</option>
+              <option value="text">text</option>
+            </select>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="clearWrong" class="danger">清空全部錯題</button>
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top:16px">
+        <div id="wrongList" class="list"></div>
+      </section>
+    </main>
+
+    <script src="./common.js"></script>
+    <script src="./review.js"></script>
+  </body>
+</html>

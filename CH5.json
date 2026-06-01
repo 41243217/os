@@ -1,0 +1,17 @@
+[
+  {
+    "question": "OSI 模型共有幾層？",
+    "options": ["5", "6", "7", "8"],
+    "answer": 3,
+    "type": "single"
+  },
+  {
+    "question": "下列哪些屬於傳輸層協定？",
+    "options": ["TCP", "UDP", "IP", "ARP"],
+    "answer": ["TCP", "UDP"]
+  },
+  {
+    "question": "What does DNS stand for?",
+    "answer": "Domain Name System"
+  }
+]
