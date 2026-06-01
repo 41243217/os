@@ -1,0 +1,18 @@
+[
+  {
+    "question": "下列哪些是雲端服務模型？",
+    "options": ["IaaS", "PaaS", "SaaS", "BGP"],
+    "answer": [1, 2, 3],
+    "type": "multiple"
+  },
+  {
+    "question": "虛擬化技術可提升資源利用率。",
+    "options": ["正確", "錯誤"],
+    "answer": "正確",
+    "type": "single"
+  },
+  {
+    "question": "英文縮寫 VM 的全名是？",
+    "answer": "Virtual Machine"
+  }
+]

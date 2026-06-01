@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>開始測驗</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <h1>開始測驗</h1>
+        <a class="btn secondary" href="./index.html">回首頁</a>
+      </div>
+
+      <section class="panel">
+        <h2>測驗設定</h2>
+        <div class="controls" style="margin-top: 12px">
+          <div>
+            <label>章節</label>
+            <div class="checkbox-group" id="chapterOptions"></div>
+          </div>
+          <div>
+            <label>題型</label>
+            <div class="checkbox-group" id="typeOptions"></div>
+          </div>
+          <div>
+            <label for="questionCount">題數</label>
+            <input type="number" id="questionCount" min="1" max="200" value="10" />
+          </div>
+          <div>
+            <label>其他</label>
+            <label class="checkbox-item"><input id="chineseOnly" type="checkbox" />只測驗中文題目（僅看題目文字，不看選項）</label>
+          </div>
+        </div>
+        <div class="actions">
+          <button id="startBtn">開始抽題</button>
+          <span id="status" class="message"></span>
+        </div>
+      </section>
+
+      <section class="panel" id="quizPanel" style="display:none; margin-top: 16px">
+        <div class="header" style="margin-bottom: 8px">
+          <h2>題目</h2>
+          <button id="submitBtn">提交答案</button>
+        </div>
+        <div id="quizList" class="list"></div>
+      </section>
+
+      <section class="panel" id="resultPanel" style="display:none; margin-top:16px">
+        <h2>結果</h2>
+        <p id="resultSummary" style="margin-top:8px"></p>
+        <div class="actions">
+          <button id="retryBtn">再測一次</button>
+          <a class="btn secondary" href="./review.html">看錯題</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="./common.js"></script>
+    <script src="./quiz.js"></script>
+  </body>
+</html>

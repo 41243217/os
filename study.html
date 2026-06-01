@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>閱讀記憶</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="header">
+        <h1>閱讀記憶</h1>
+        <a class="btn secondary" href="./index.html">回首頁</a>
+      </div>
+
+      <section class="panel">
+        <div class="controls">
+          <div>
+            <label for="studyChapter">章節</label>
+            <select id="studyChapter">
+              <option value="all">全部章節</option>
+            </select>
+          </div>
+          <div>
+            <label for="studyType">題型</label>
+            <select id="studyType">
+              <option value="all">全部題型</option>
+              <option value="single">single</option>
+              <option value="multiple">multiple</option>
+              <option value="text">text</option>
+            </select>
+          </div>
+          <div>
+            <label for="sortMode">排序</label>
+            <select id="sortMode">
+              <option value="original">原始順序</option>
+              <option value="answerFrequency">答案重複次數（高到低）</option>
+            </select>
+          </div>
+          <div>
+            <label>其他</label>
+            <label class="checkbox-item"><input id="studyChineseOnly" type="checkbox" />只看中文題目（僅看題目文字，不看選項）</label>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top:16px">
+        <div class="grid stats">
+          <article class="card"><p class="small muted">總題數</p><h3 id="statTotal">0</h3></article>
+          <article class="card"><p class="small muted">需特別記憶</p><h3 id="statHighlight">0</h3></article>
+          <article class="card"><p class="small muted">single</p><h3 id="statSingle">0</h3></article>
+          <article class="card"><p class="small muted">multiple</p><h3 id="statMultiple">0</h3></article>
+          <article class="card"><p class="small muted">text</p><h3 id="statText">0</h3></article>
+        </div>
+      </section>
+
+      <section class="panel" style="margin-top:16px">
+        <div id="studyStatus" class="message"></div>
+        <div id="studyList" class="list" style="margin-top:10px"></div>
+      </section>
+    </main>
+
+    <script src="./common.js"></script>
+    <script src="./study.js"></script>
+  </body>
+</html>

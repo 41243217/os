@@ -1,0 +1,19 @@
+{
+  "questions": [
+    {
+      "question": "HTTP 預設連接埠是？",
+      "options": ["21", "25", "80", "443"],
+      "answer": "C"
+    },
+    {
+      "question": "HTTPS 預設連接埠是？",
+      "options": ["53", "80", "110", "443"],
+      "answer": "443"
+    },
+    {
+      "question": "請填寫縮寫：HyperText Transfer Protocol",
+      "answer": "HTTP",
+      "type": "text"
+    }
+  ]
+}

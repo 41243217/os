@@ -1,0 +1,16 @@
+[
+  {
+    "question": "以下哪個是非對稱加密演算法？",
+    "options": ["AES", "DES", "RSA", "RC4"],
+    "answer": "RSA"
+  },
+  {
+    "question": "選出常見的雜湊函式",
+    "options": ["SHA-256", "MD5", "TLS", "FTP"],
+    "answer": "SHA-256,MD5"
+  },
+  {
+    "question": "What is the main goal of CIA triad C?",
+    "answer": "Confidentiality"
+  }
+]
