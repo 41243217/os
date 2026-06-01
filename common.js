@@ -119,7 +119,7 @@ function normalizeQuestion(raw, chapter, index) {
 }
 
 async function loadChapterQuestions(chapter) {
-  const response = await fetch(`./${chapter}.json`, { cache: "no-store" });
+  const response = await fetch(`./${chapter}.json`, { cache: "default" });
   if (!response.ok) {
     throw new Error(`${chapter}.json 載入失敗 (${response.status})`);
   }
