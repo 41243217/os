@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>刷題系統 - 主頁</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>刷題系統</h1>
+      <p class="subtle">選擇功能開始學習</p>
+
+      <section class="grid links">
+        <a class="card" href="quiz.html">開始測驗</a>
+        <a class="card" href="review.html">錯題回顧</a>
+        <a class="card" href="study.html">閱讀記憶</a>
+        <a class="card" href="page.html">最新題庫總覽</a>
+      </section>
+
+      <section class="stats" aria-label="學習統計">
+        <h2>學習統計</h2>
+        <div class="grid three">
+          <div class="stat"><strong id="attempts">0</strong><span>測驗次數</span></div>
+          <div class="stat"><strong id="wrong-count">0</strong><span>累計錯題</span></div>
+          <div class="stat"><strong id="avg-score">0%</strong><span>平均分數</span></div>
+        </div>
+      </section>
+    </main>
+    <script src="common.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

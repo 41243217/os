@@ -1,0 +1,19 @@
+[
+  {
+    "question": "OSI 七層模型中，負責路由的是哪一層？",
+    "options": ["實體層", "網路層", "應用層", "會議層"],
+    "answer": "網路層",
+    "type": "single"
+  },
+  {
+    "question": "下列哪些屬於常見傳輸層協定？",
+    "options": ["TCP", "UDP", "HTTP", "DNS"],
+    "answer": ["TCP", "UDP"],
+    "type": "multiple"
+  },
+  {
+    "question": "HTTP 的預設連接埠是？",
+    "answer": "80",
+    "type": "text"
+  }
+]

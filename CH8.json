@@ -1,0 +1,19 @@
+[
+  {
+    "question": "SQL 中用於查詢資料的關鍵字是？",
+    "options": ["UPDATE", "DELETE", "SELECT", "INSERT"],
+    "answer": "SELECT",
+    "type": "single"
+  },
+  {
+    "question": "下列哪些屬於資料庫正規化目的？",
+    "options": ["降低重複", "避免更新異常", "提升耦合", "維持一致性"],
+    "answer": ["降低重複", "避免更新異常", "維持一致性"],
+    "type": "multiple"
+  },
+  {
+    "question": "關聯式資料庫常用語言縮寫為？",
+    "answer": "SQL",
+    "type": "text"
+  }
+]

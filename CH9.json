@@ -1,0 +1,19 @@
+[
+  {
+    "question": "作業系統中，虛擬記憶體主要透過哪種機制實作？",
+    "options": ["分頁", "排程", "中斷", "緩衝"],
+    "answer": "分頁",
+    "type": "single"
+  },
+  {
+    "question": "下列哪些是常見同步機制？",
+    "options": ["Mutex", "Semaphore", "Cache", "Monitor"],
+    "answer": ["Mutex", "Semaphore", "Monitor"],
+    "type": "multiple"
+  },
+  {
+    "question": "CPU 排程中，最短工作優先英文縮寫是？",
+    "answer": "SJF",
+    "type": "text"
+  }
+]

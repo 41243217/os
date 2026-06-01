@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>最新題庫總覽</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <a class="back" href="index.html">← 返回主頁</a>
+      <h1>最新題庫總覽</h1>
+
+      <section class="grid two">
+        <div class="stat card"><strong id="chapter-total">0</strong><span>最新章節檔</span></div>
+        <div class="stat card"><strong id="question-total">0</strong><span>合計題數</span></div>
+      </section>
+
+      <section class="card block">
+        <table>
+          <thead>
+            <tr>
+              <th>章節</th>
+              <th>總題數</th>
+              <th>單選題</th>
+              <th>多選題</th>
+              <th>填充題</th>
+            </tr>
+          </thead>
+          <tbody id="overview-body"></tbody>
+        </table>
+      </section>
+    </main>
+
+    <script src="common.js"></script>
+    <script src="page.js"></script>
+  </body>
+</html>
